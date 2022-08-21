@@ -34,7 +34,7 @@ import { Buffer } from "buffer";
 
 function HexStrToUint8Array(hexStr: string) {
   const arr = new Uint8Array(hexStr.length/2);
-  for (let i = 0; i < hexStr.length/2; i+=2) {
+  for (let i = 0; i < hexStr.length/2; i++) {
     const current_uint8 = parseInt(hexStr.substring(2*i, 2*i+2), 16);
     arr[i] = current_uint8;
   }
